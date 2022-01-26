@@ -3,10 +3,8 @@ package ru.netology.domain;
 import java.util.Objects;
 
 public class Smartphone extends Product {
-    private String producer;
+    private final String producer;
 
-    public Smartphone() {
-    }
 
     public Smartphone(int id, String name, int price, String producer) {
         super(id, name, price);
@@ -17,9 +15,6 @@ public class Smartphone extends Product {
         return producer;
     }
 
-    public void setProducer(String producer) {
-        this.producer = producer;
-    }
 
     @Override
     public boolean equals(Object o) {

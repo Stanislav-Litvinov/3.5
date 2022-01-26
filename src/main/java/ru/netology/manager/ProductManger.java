@@ -8,7 +8,7 @@ import ru.netology.repository.ProductRepository;
 public class ProductManger {
     ProductRepository repository;
 
-    public ProductManger(ProductRepository repository) {
+    ProductManger(ProductRepository repository) {
         this.repository = repository;
     }
 
